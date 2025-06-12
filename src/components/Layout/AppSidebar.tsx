@@ -19,12 +19,14 @@ import {
   Shield, 
   Database, 
   Settings,
-  CheckCircle
+  CheckCircle,
+  Megaphone
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const menuItems = [
   { title: "Dashboard", url: "/", icon: Home },
+  { title: "Campaigns", url: "/campaigns", icon: Megaphone },
   { title: "Category Hierarchy", url: "/categories", icon: TreePine },
   { title: "Geography", url: "/geography", icon: MapPin },
   { title: "Roles & Users", url: "/users", icon: Users },

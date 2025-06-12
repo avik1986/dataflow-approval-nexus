@@ -13,6 +13,7 @@ import Approvals from "./pages/Approvals";
 import Attributes from "./pages/Attributes";
 import Entities from "./pages/Entities";
 import Settings from "./pages/Settings";
+import Campaigns from "./pages/Campaigns";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
         <AppLayout>
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/campaigns" element={<Campaigns />} />
             <Route path="/categories" element={<Categories />} />
             <Route path="/users" element={<Users />} />
             <Route path="/geography" element={<Geography />} />
