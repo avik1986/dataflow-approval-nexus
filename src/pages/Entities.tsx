@@ -1,4 +1,6 @@
 
+import { EntitiesTable } from "@/components/Entities/EntitiesTable";
+
 export default function Entities() {
   return (
     <div className="space-y-6">
@@ -9,11 +11,7 @@ export default function Entities() {
         </p>
       </div>
       
-      <div className="rounded-lg border p-6">
-        <p className="text-muted-foreground">
-          Entities management functionality will be implemented here.
-        </p>
-      </div>
+      <EntitiesTable />
     </div>
   );
 }

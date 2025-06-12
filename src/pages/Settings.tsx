@@ -1,4 +1,6 @@
 
+import { SettingsPanel } from "@/components/Settings/SettingsPanel";
+
 export default function Settings() {
   return (
     <div className="space-y-6">
@@ -9,11 +11,7 @@ export default function Settings() {
         </p>
       </div>
       
-      <div className="rounded-lg border p-6">
-        <p className="text-muted-foreground">
-          System settings configuration will be implemented here.
-        </p>
-      </div>
+      <SettingsPanel />
     </div>
   );
 }
