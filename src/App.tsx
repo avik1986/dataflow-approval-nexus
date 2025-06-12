@@ -10,6 +10,9 @@ import Categories from "./pages/Categories";
 import Users from "./pages/Users";
 import Geography from "./pages/Geography";
 import Approvals from "./pages/Approvals";
+import Attributes from "./pages/Attributes";
+import Entities from "./pages/Entities";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +30,9 @@ const App = () => (
             <Route path="/users" element={<Users />} />
             <Route path="/geography" element={<Geography />} />
             <Route path="/approvals" element={<Approvals />} />
+            <Route path="/attributes" element={<Attributes />} />
+            <Route path="/entities" element={<Entities />} />
+            <Route path="/settings" element={<Settings />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AppLayout>
